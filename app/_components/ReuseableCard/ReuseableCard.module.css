@@ -1,0 +1,159 @@
+.card {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: white;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  min-width: 100%;
+}
+
+.img_cont {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.img_cont p {
+  border-radius: 1000px;
+  color: #373ae1;
+  background: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  height: max-content;
+}
+
+.like {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: white;
+  color: #373ae1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.like:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 16px;
+}
+
+.name p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #29344f;
+}
+
+.name h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.details > div {
+  display: flex;
+  justify-content: center;
+}
+
+.details * {
+  color: #29344f;
+}
+
+.details p {
+  margin-top: 10px;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.btn {
+  background: transparent;
+  border: solid 1px #373ae1 !important;
+  color: #373ae1 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+.price {
+  color: #373ae1;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price span {
+  font-size: 14px;
+  color: #29344f;
+  font-weight: 500;
+}
+
+.bottom_content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name svg {
+  color: orange;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.clip {
+  position: absolute;
+  top: 48%;
+  left: -6px;
+}
+
+.popular {
+  background: #373ae1;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.bg {
+  background: #2f2b68;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
