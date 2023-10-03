@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation';
 
 const PropertyDetails = async ({ params }) => {
   const id = params.id;
-  console.log({ id })
 
   if (Number(id) > 36 || Number(id) < 1 || isNaN(Number(id))) {
     notFound();
