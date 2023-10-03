@@ -1,6 +1,6 @@
-import { ReuseableCard } from '@/app/_components';
+import { ReuseableCard } from '../../_components';
 import styles from '../../page.module.css';
-import { getProperty } from '@/app/_utils/propertyUtils';
+import { getProperty } from '../../_utils/propertyUtils';
 import { notFound } from 'next/navigation';
 
 const PropertyDetails = async ({ params }) => {

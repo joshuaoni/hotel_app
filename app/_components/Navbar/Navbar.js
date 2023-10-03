@@ -25,6 +25,7 @@ const Navbar = () => {
         <div className={styles.nav}>
           <div className={styles.tabs}>
             <Button
+              sx={{ paddingX: '20px', paddingY: '10px' }}
               className={layout === 1 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(1);
@@ -36,6 +37,7 @@ const Navbar = () => {
               Lagos
             </Button>
             <Button
+              sx={{ paddingX: '20px', paddingY: '10px' }}
               className={layout === 2 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(2);
@@ -47,6 +49,7 @@ const Navbar = () => {
               Mumbai
             </Button>
             <Button
+              sx={{ paddingX: '20px', paddingY: '10px' }}
               className={layout === 3 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(3);
@@ -58,6 +61,7 @@ const Navbar = () => {
               New York
             </Button>
             <Button
+              sx={{ paddingX: '20px', paddingY: '10px' }}
               className={layout === 4 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(4);
