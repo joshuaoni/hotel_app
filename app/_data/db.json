@@ -2,7 +2,7 @@
   "properties": [
     {
       "id": "1",
-      "name": "RCE Theaters - 907 Beckford Dr Henderson, NC 27536",
+      "name": "RCE Theaters",
       "image": "/1.jpg",
       "purpose": "Rent",
       "location": "5576 Pecan St.",
@@ -478,7 +478,7 @@
     },
     {
       "id": "35",
-      "name": "Real New York Motel 67324242424",
+      "name": "Real Motel 67324242424",
       "image": "/3.jpg",
       "purpose": "Sale",
       "location": "5576 Pecan St.",
@@ -492,7 +492,7 @@
     },
     {
       "id": "36",
-      "name": "RCE Theaters - 907 Beckford Dr Henderson, NC 27536",
+      "name": "Jagaban Hotels",
       "image": "/7.jpg",
       "purpose": "Rent",
       "location": "5576 Pecan St.",
