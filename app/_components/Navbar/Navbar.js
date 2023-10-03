@@ -3,8 +3,8 @@
 import { Button } from '@mui/material';
 import styles from './Navbar.module.css';
 import EastOutlinedIcon from '@mui/icons-material/EastOutlined';
-import { useDispatch, useLayout, useProperty, useSetClick, useSetLayout } from '@/app/_contexts/PropertyProvider';
-import { ACTIONS } from '@/app/_actions/propertyActions';
+import { useDispatch, useLayout, useProperty, useSetClick, useSetLayout } from '../../_contexts/PropertyProvider';
+import { ACTIONS } from '../../_actions/propertyActions';
 
 const Navbar = () => {
   const layout = useLayout();
@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <div className={styles.nav}>
           <div className={styles.tabs}>
-            <p
+            <Button
               className={layout === 1 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(1);
@@ -34,8 +34,8 @@ const Navbar = () => {
                 setClicked(false);
               }}>
               Lagos
-            </p>
-            <p
+            </Button>
+            <Button
               className={layout === 2 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(2);
@@ -45,8 +45,8 @@ const Navbar = () => {
                 setClicked(false);
               }}>
               Mumbai
-            </p>
-            <p
+            </Button>
+            <Button
               className={layout === 3 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(3);
@@ -56,8 +56,8 @@ const Navbar = () => {
                 setClicked(false);
               }}>
               New York
-            </p>
-            <p
+            </Button>
+            <Button
               className={layout === 4 ? `${styles.active} ${styles.tab}` : `${styles.tab}`}
               onClick={() => {
                 setLayout(4);
@@ -67,7 +67,7 @@ const Navbar = () => {
                 setClicked(false);
               }}>
               London
-            </p>
+            </Button>
           </div>
 
           <Button

@@ -1,11 +1,20 @@
 "use client";
 
-import { useClick, useCurrentData, useDispatch, useError, useLayout, useLoading, useProperty, useSetClick } from '@/app/_contexts/PropertyProvider';
+import {
+  useClick,
+  useCurrentData,
+  useDispatch,
+  useError,
+  useLayout,
+  useLoading,
+  useProperty,
+  useSetClick
+} from '../../_contexts/PropertyProvider';
 import { ReuseableCard } from '../index';
 import styles from './PropertyComponent.module.css';
 import { Button } from '@mui/material';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
-import { ACTIONS } from '@/app/_actions/propertyActions';
+import { ACTIONS } from '../../_actions/propertyActions';
 import Link from 'next/link';
 
 const PropertyComponent = () => {
@@ -27,17 +36,14 @@ const PropertyComponent = () => {
             error ?
               <p>{error === 'Failed to fetch' ? 'Failed to fetch properties. Check that the server is running and try again' : 'An Error Occurred'}</p> :
               currentCityProperties.length ?
-                currentCityProperties.map(property => {
-                  console.log({ p: property.id })
-                  return (
-                    <Link
-                      key={property.id}
-                      href={`/property/${property.id}`}
-                    >
-                      <ReuseableCard property={property} />
-                    </Link>
-                  )
-                }) :
+                currentCityProperties.map(property => (
+                  <Link
+                    key={property.id}
+                    href={`/property/${property.id}`}
+                  >
+                    <ReuseableCard property={property} />
+                  </Link>
+                )) :
                 <p>No properties available</p>}
         </div>
 

@@ -15,6 +15,7 @@
   font-size: 30px;
   font-weight: 900;
   margin: 20px 0;
+  text-align: center;
 }
 
 .title p {
@@ -34,18 +35,20 @@
 }
 
 .tab {
-  font-size: 16px;
-  padding: 15px 24px;
-  border-radius: 1000px;
-  background: #ecebfb;
-  margin-right: 12px;
-  cursor: pointer;
-  font-weight: 600;
+  font-size: 16px !important;
+  padding: 10px 20px;
+  border-radius: 1000px !important;
+  background: #ecebfb !important;
+  margin-right: 12px !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  color: #29344f !important;
 }
 
 .active {
-  background: #373ae1;
-  color: white;
+  background: #373ae1 !important;
+  color: white !important;
 }
 
 .tab:hover,

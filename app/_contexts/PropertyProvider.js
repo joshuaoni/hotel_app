@@ -62,7 +62,7 @@ const PropertyProvider = ({ children }) => {
   useEffect(() => {
     const getPropertiesFunction = async () => {
       let [data, error] = await getAllProperties();
-      console.log({ data, error })
+
       if (data !== null) {
         setProperties(data);
         dispatch({
